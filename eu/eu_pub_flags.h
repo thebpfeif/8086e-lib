@@ -1,3 +1,4 @@
+#include "stdbool.h"
 
 /* TYPES */
 
@@ -22,3 +23,20 @@ enum
 	EU_RSRV_4,				/* reserved				*/
 	EU_FLAG_REG_COUNT, 
 };
+
+/* PROCEDURES */
+bool EU_flag_reg_get
+(
+	EU_flag_reg_t8 flag
+);
+
+void EU_flag_reg_init
+(
+	void
+);
+
+void EU_flag_reg_set
+(
+	EU_flag_reg_t8 flag
+);
+
